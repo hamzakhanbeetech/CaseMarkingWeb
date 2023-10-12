@@ -1,0 +1,97 @@
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\appsettings.Development.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\appsettings.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.exe
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.deps.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.runtimeconfig.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Azure.Core.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Azure.Identity.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Humanizer.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\IdentityModel.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\IdentityServer4.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\IdentityServer4.Storage.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.CodeDom.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Memory.Data.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.Interfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.Models.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.Service.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\DataAccessLayer.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.Interfaces.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.Service.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.Models.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.csproj.AssemblyReference.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.AssemblyInfoInputs.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.AssemblyInfo.cs
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.csproj.CoreCompileInputs.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.MvcApplicationPartsAssemblyInfo.cs
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.MvcApplicationPartsAssemblyInfo.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets\msbuild.Case Marking Web Application.Microsoft.AspNetCore.StaticWebAssets.props
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets\msbuild.build.Case Marking Web Application.props
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Case Marking Web Application.props
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Case Marking Web Application.props
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets.pack.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets.build.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\staticwebassets.development.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\scopedcss\bundle\Case Marking Web Application.styles.css
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.csproj.CopyComplete
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\refint\Case Marking Web Application.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.genruntimeconfig.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\ref\Case Marking Web Application.dll

@@ -1,0 +1,15 @@
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Debug\net7.0\Case Marking Web Application.Interfaces.deps.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Debug\net7.0\Case Marking Web Application.Interfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Debug\net7.0\Case Marking Web Application.Interfaces.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Debug\net7.0\Case Marking Web Application.Models.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Debug\net7.0\Case Marking Web Application.Models.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.csproj.AssemblyReference.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.AssemblyInfoInputs.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.AssemblyInfo.cs
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.csproj.CoreCompileInputs.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.csproj.CopyComplete
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\refint\Case Marking Web Application.Interfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\ref\Case Marking Web Application.Interfaces.dll

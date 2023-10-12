@@ -1,0 +1,135 @@
+<div class="container p-3">
+
+    <div class="heading">
+        <h1 class="text-center m-4">Case Marking History</h1>
+    </div>
+
+    <div class="content">
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Add Marked Case</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form [formGroup]="markedCaseFrom">
+                            <!-- <div class="form-group mb-3">
+                                <input type="text" placeholder="Case No" class="form-control" formControlName="caseNo">
+                                
+                            </div> -->
+                            <!-- <div class="form-group mb-3">
+                                <input type="text" placeholder="Case Title" class="form-control" formControlName="caseTitle">
+                                
+                            </div> -->
+                            <div class="form-group mb-3">
+                                <label>Date of Marking</label>
+                                <input readonly type="datetime-local" placeholder="Marking Date" class="form-control" formControlName="markedDate">
+                                
+                            </div>
+                            <div class="form-group mb-3">   
+                                <label>Case Category</label>             
+                                <select placeholder="Court Name" class="form-control" formControlName="caseCategory">
+                                    <option disabled value="0">--Select Case Category--</option>
+                                    <option *ngFor="let c of caseCategoryList" [ngValue]="c">{{ c }}</option>
+                                </select>
+                                
+                            </div>
+                            <div class="form-group mb-3">   
+                                <label>Court Name</label>         
+                                <select placeholder="Court Name" class="form-control" formControlName="courtName">
+                                    <option [value]="1" [disabled]="true">--Select Court Name--</option>  
+                                    <option *ngFor="let c of courtList" [ngValue]="c">{{ c }}</option>
+                                </select>
+                                
+                            </div>
+            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="onSubmitMarkedCase()" >Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="search-section shadow rounded p-4">
+        <div class="row">
+            <div class="col-4">
+                <div class="form-group mb-3">
+                    <input [(ngModel)]="dateFrom" type="datetime-local" placeholder="Date From " class="form-control">
+        
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="form-group mb-3">
+                    <input [(ngModel)]="dateTo " type="datetime-local" placeholder="Date To" class="form-control">
+        
+                </div>
+                
+            </div>
+            <div class="col-4">
+                <button (click)="getMarkedCaseHistory()" class="btn btn-primary">Get
+                    History</button>
+                
+            </div>
+    
+
+        </div>
+    </div>
+
+
+    <div class="marking-history">
+        <br><hr><br>
+
+        <div class="row">
+            <div class="col-2">
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add Marked Case
+                </button> -->
+
+            </div>
+            <div class="col-10">
+                <h1 class="text-center">Displaying Data From <u>{{dateFrom | date : 'short'}}</u>  to <u>{{dateTo  | date : 'short'}}</u> </h1>
+        
+
+            </div>
+        </div>
+
+        <table class="shadow p-3">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th *ngFor="let courtName of courtList">{{ courtName }}</th>
+                    <th class="text-dark">Total</th> <!-- New column for the total count of each category -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of caseMarkingHistoryData">
+                    <td>{{ item.caseCategory }}</td>
+                    <td data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" *ngFor="let courtName of courtList" (click)="addNewCase(item.caseCategory, courtName)">
+                        {{ getCourtNumberOfCases(item.stats, courtName) }}
+                    </td>
+                    <td>{{ getTotalCasesForCategory(item.caseCategory) }}</td>
+                    <!-- New column for the total count of each category -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td *ngFor="let courtName of courtList">{{ getTotalCasesForCourt(courtName) }}</td>
+                    <td>{{ getTotalCasesForAllCategories() }}</td>
+                    <!-- New column for the total count of all categories -->
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</div>

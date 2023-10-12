@@ -1,0 +1,19 @@
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Service.deps.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Service.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Service.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Interfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Models.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\DataAccessLayer.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Interfaces.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\bin\Debug\net7.0\Case Marking Web Application.Models.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.csproj.AssemblyReference.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.AssemblyInfoInputs.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.AssemblyInfo.cs
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.csproj.CoreCompileInputs.cache
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.csproj.CopyComplete
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\refint\Case Marking Web Application.Service.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\Case Marking Web Application.Service.pdb
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Service\obj\Debug\net7.0\ref\Case Marking Web Application.Service.dll

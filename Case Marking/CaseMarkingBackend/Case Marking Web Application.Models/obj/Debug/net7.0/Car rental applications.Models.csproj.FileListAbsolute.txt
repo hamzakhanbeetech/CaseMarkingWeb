@@ -1,0 +1,36 @@
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.AssemblyInfoInputs.cache
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.AssemblyInfo.cs
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.csproj.CoreCompileInputs.cache
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.csproj.AssemblyReference.cache
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.deps.json
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.dll
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.pdb
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.dll
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\refint\Car rental applications.Models.dll
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.pdb
+D:\HK Dev\CarRental\RentalCarBackend\Car rental applications.Models\obj\Debug\net7.0\ref\Car rental applications.Models.dll
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.deps.json
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.dll
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.pdb
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.csproj.AssemblyReference.cache
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.AssemblyInfoInputs.cache
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.AssemblyInfo.cs
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.csproj.CoreCompileInputs.cache
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.dll
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\refint\Car rental applications.Models.dll
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.pdb
+C:\Users\Laptop House\Downloads\MINI ASS Final\Backend\Car rental applications.Models\obj\Debug\net7.0\ref\Car rental applications.Models.dll
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.deps.json
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.dll
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\bin\Debug\net7.0\Car rental applications.Models.pdb
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.csproj.AssemblyReference.cache
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.AssemblyInfoInputs.cache
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.AssemblyInfo.cs
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.csproj.CoreCompileInputs.cache
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.dll
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\refint\Car rental applications.Models.dll
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\Car rental applications.Models.pdb
+D:\HK Dev\Case Marking\CaseMarkingBackend\Car rental applications.Models\obj\Debug\net7.0\ref\Car rental applications.Models.dll

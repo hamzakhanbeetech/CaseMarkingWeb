@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Case_Marking_Web_Application.Service</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Case Marking Web Application.Interfaces\Case Marking Web Application.Interfaces.csproj" />
+    <ProjectReference Include="..\Case Marking Web Application.Interfaces\Case Marking Web Application.Interfaces.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
