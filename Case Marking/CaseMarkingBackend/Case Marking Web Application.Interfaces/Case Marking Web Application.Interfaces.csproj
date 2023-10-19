@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Car rental applications.Models\Car rental applications.Models.csproj" />
+    <ProjectReference Include="..\Case Marking Web Application.Models\Case Marking Web Application.Models.csproj" />
     <ProjectReference Include="..\Case Marking Web Application.Models\Case Marking Web Application.Models.csproj" />
   </ItemGroup>
 

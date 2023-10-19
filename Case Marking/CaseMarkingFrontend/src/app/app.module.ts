@@ -23,7 +23,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -79,7 +78,6 @@ import { AddMarkedCaseComponent } from './components/add-marked-case/add-marked-
     NoopAnimationsModule,
 
     BrowserAnimationsModule,
-     NgbModule,
 
   ],
 

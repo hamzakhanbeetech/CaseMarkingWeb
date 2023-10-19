@@ -1,0 +1,17 @@
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\bin\Release\net7.0\DataAccessLayer.deps.json
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\bin\Release\net7.0\DataAccessLayer.runtimeconfig.json
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\bin\Release\net7.0\DataAccessLayer.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\bin\Release\net7.0\DataAccessLayer.pdb
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\bin\Release\net7.0\Case Marking Web Application.Models.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\bin\Release\net7.0\Case Marking Web Application.Models.pdb
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.AssemblyInfo.cs
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.csproj.CopyComplete
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\refint\DataAccessLayer.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.pdb
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\DataAccessLayer.genruntimeconfig.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Release\net7.0\ref\DataAccessLayer.dll

@@ -1,0 +1,15 @@
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Release\net7.0\Case Marking Web Application.Interfaces.deps.json
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Release\net7.0\Case Marking Web Application.Interfaces.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Release\net7.0\Case Marking Web Application.Interfaces.pdb
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Release\net7.0\Case Marking Web Application.Models.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\bin\Release\net7.0\Case Marking Web Application.Models.pdb
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.csproj.AssemblyReference.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.AssemblyInfoInputs.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.AssemblyInfo.cs
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.csproj.CoreCompileInputs.cache
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.csproj.CopyComplete
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\refint\Case Marking Web Application.Interfaces.dll
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\Case Marking Web Application.Interfaces.pdb
+E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Release\net7.0\ref\Case Marking Web Application.Interfaces.dll

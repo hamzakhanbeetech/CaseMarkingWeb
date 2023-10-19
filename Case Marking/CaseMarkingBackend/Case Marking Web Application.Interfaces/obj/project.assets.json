@@ -300,19 +300,6 @@
           }
         }
       },
-      "Car rental applications.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.Extensions.Identity.Stores": "7.0.11"
-        },
-        "compile": {
-          "bin/placeholder/Car rental applications.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Car rental applications.Models.dll": {}
-        }
-      },
       "Case Marking Web Application.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -758,11 +745,6 @@
         "version.txt"
       ]
     },
-    "Car rental applications.Models/1.0.0": {
-      "type": "project",
-      "path": "../Car rental applications.Models/Car rental applications.Models.csproj",
-      "msbuildProject": "../Car rental applications.Models/Car rental applications.Models.csproj"
-    },
     "Case Marking Web Application.Models/1.0.0": {
       "type": "project",
       "path": "../Case Marking Web Application.Models/Case Marking Web Application.Models.csproj",
@@ -771,25 +753,24 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Car rental applications.Models >= 1.0.0",
       "Case Marking Web Application.Models >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Abstractions >= 2.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Laptop House\\.nuget\\packages\\": {}
+    "C:\\Users\\hamza.khan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
+      "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
       "projectName": "Case Marking Web Application.Interfaces",
-      "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
-      "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-      "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\obj\\",
+      "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+      "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -803,11 +784,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj": {
-              "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj"
-            },
-            "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
-              "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
+            "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
+              "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
             }
           }
         }
@@ -843,7 +821,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

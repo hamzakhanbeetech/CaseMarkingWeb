@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Case Marking Web Application.Models\Case Marking Web Application.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

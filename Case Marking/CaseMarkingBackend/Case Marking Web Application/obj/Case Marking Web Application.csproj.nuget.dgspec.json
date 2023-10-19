@@ -1,81 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj": {}
+    "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj": {}
   },
   "projects": {
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj": {
+    "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj",
-        "projectName": "Car rental applications.Models",
-        "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj",
-        "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-        "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.Extensions.Identity.Stores": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
+        "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
         "projectName": "Case Marking Web Application.Interfaces",
-        "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-        "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\obj\\",
+        "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,11 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Car rental applications.Models\\Car rental applications.Models.csproj"
-              },
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
               }
             }
           }
@@ -129,21 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
+    "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
+        "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
         "projectName": "Case Marking Web Application.Models",
-        "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
-        "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-        "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\obj\\",
+        "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
+        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,21 +126,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj": {
+    "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj",
+        "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj",
         "projectName": "Case Marking Web Application.Service",
-        "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj",
-        "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-        "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\obj\\",
+        "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj",
+        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,11 +154,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj"
               },
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -252,21 +188,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj": {
+    "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj",
+        "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj",
         "projectName": "Case Marking Web Application",
-        "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj",
-        "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-        "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\obj\\",
+        "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\Case Marking Web Application.csproj",
+        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -274,23 +210,24 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj"
               },
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
               },
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj"
               },
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -369,21 +306,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Laptop House\\.nuget\\packages\\",
-        "outputPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\obj\\",
+        "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laptop House\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -397,8 +334,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
-                "projectPath": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
+              "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj": {
+                "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj"
               }
             }
           }
@@ -452,7 +389,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
