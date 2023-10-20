@@ -10,11 +10,11 @@
         "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
         "projectName": "Case Marking Web Application.Interfaces",
         "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\Case Marking Web Application.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
         "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,11 +75,11 @@
         "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
         "projectName": "Case Marking Web Application.Models",
         "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
-        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
         "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,11 +136,11 @@
         "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj",
         "projectName": "Case Marking Web Application.Service",
         "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\Case Marking Web Application.Service.csproj",
-        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
         "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -198,11 +198,11 @@
         "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
         "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
         "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

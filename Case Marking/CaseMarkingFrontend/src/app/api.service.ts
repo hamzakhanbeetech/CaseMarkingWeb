@@ -6,6 +6,8 @@ import { Observable, throwError } from 'rxjs';
 
 import { catchError } from 'rxjs/operators';
 
+import { environment } from 'src/environment/environment';
+
 
 
 
@@ -17,9 +19,6 @@ import { catchError } from 'rxjs/operators';
 
 export class ApiService {
 
-  private baseUrl = 'https://localhost:7196/api/';
-
-
 
 
   constructor(private http: HttpClient) { }
@@ -29,7 +28,7 @@ export class ApiService {
   addMarkedCase(caseData: any): Observable<any> {
 
 
-    return this.http.post('https://localhost:7196/api/Auth/add-marked-case', caseData).pipe(
+    return this.http.post(environment.apiUrl+'Auth/add-marked-case', caseData).pipe(
 
       catchError(this.handleError)
 
@@ -39,7 +38,7 @@ export class ApiService {
   getMarkedCaseHistory(dateFrom: any, dateTo: any): Observable<any> {
 
 
-    return this.http.get('https://localhost:7196/api/Auth/get-marked-case-history?dateFrom='+dateFrom+'&dateTo='+dateTo).pipe(
+    return this.http.get(environment.apiUrl+'Auth/get-marked-case-history?dateFrom='+dateFrom+'&dateTo='+dateTo).pipe(
 
       catchError(this.handleError)
 

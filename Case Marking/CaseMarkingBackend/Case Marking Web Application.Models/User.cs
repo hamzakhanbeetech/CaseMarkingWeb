@@ -1,22 +1,15 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
+namespace Case_Marking_Web_Applications.Models;
 
-namespace Case_Marking_Web_Application.Models
-{ 
+public partial class User
+{
+    public int UserId { get; set; }
 
-	public class User
-	{
-		[Key]
-		public int UserId { get; set; }
-		public string Email { get; set; }
-		public string Password { get; set; }
-		public string Role { get; set; } // "RegularUser" or "Admin"
+    public string Email { get; set; } = null!;
 
-		public User()
-		{
-			Email = string.Empty; // Initialize with an empty string
-			Password = string.Empty; // Initialize with an empty string
-			Role = string.Empty; // Initialize with an empty string
-		}
-	}
+    public string Password { get; set; } = null!;
+
+    public string Role { get; set; } = null!;
 }

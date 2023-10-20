@@ -3113,7 +3113,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hamza.khan\\.nuget\\packages\\": {}
+    "C:\\Users\\administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3121,11 +3121,11 @@
       "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
       "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
       "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

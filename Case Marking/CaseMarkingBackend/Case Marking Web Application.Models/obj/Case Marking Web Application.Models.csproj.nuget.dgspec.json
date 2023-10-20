@@ -10,11 +10,11 @@
         "projectUniqueName": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
         "projectName": "Case Marking Web Application.Models",
         "projectPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\Case Marking Web Application.Models.csproj",
-        "packagesPath": "C:\\Users\\hamza.khan\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
         "outputPath": "E:\\Development\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hamza.khan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
