@@ -1,0 +1,100 @@
+<div class="container">
+
+    <h1 class="text-center m-4">Inventory Management System</h1>
+
+
+
+    <div class="create-Court-form mt-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProdModal">
+            Add New Court
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addProdModal" tabindex="-1" aria-labelledby="addProdModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addProdModalLabel">Add New Court</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form to create or edit a Court -->
+                        <form [formGroup]="CourtForm">
+
+                            <label for="name">Court Name:</label>
+                            <input class="form-control" type="text" id="name" formControlName="courtName" />
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="saveCourt()">Add
+                            Court</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="display-courts m-4">
+        <!-- Display courts -->
+        <!-- Court.component.html -->
+        <div *ngIf="courts">
+            <table class="table">
+                <!-- Table headers -->
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Court Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <!-- Table body -->
+                <tbody>
+                    <tr *ngFor="let court of courts; index as i">
+                        <td>{{ i+1 }}</td>
+                        <td>{{ court.courtName }}</td>
+                        <td>
+                            <a data-bs-toggle="modal" data-bs-target="#updateModal" (click)="editCourt(court)">Edit</a>
+                            <a class="m-2 p-2" (click)="deleteCourt(court)">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel">Update Court</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div *ngIf="editingCourt">
+                    <form>
+                        <div class="form-group">
+                            <label for="CourtName">Court Name</label>
+                            <input [(ngModel)]="editingCourt.name" name="CourtName" id="CourtName" class="form-control"
+                                required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="saveEditedCourt()">Update
+                    Court</button>
+            </div>
+
+        </div>
+    </div>
+</div>

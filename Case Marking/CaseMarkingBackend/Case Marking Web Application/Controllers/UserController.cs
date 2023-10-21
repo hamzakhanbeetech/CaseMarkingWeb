@@ -1,8 +1,10 @@
 using Case_Marking_Web_Application.Interfaces;
-using Case_Marking_Web_Application.Models;
 using Case_Marking_Web_Applications.Models;
+using Case_Marking_Web_Applications.Models.DTOs;
+using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -17,14 +19,16 @@ public class AuthController : ControllerBase
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly IConfiguration _configuration;
     private readonly IUserService _userService;
+    private readonly CaseMarkingDbContext _dbContext;
 
-    public AuthController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, IUserService userService)
+    public AuthController(CaseMarkingDbContext dbContext, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, IUserService userService)
     {
         _userService = userService;        
         _signInManager = signInManager;
         _userManager = userManager;
         _roleManager = roleManager;
         _configuration = configuration;
+        _dbContext = dbContext;
     }
 
     [HttpGet]
@@ -117,67 +121,10 @@ public class AuthController : ControllerBase
         return token;
     }
 
-    [HttpPost]
-    [Route("Login")]
-    public async Task<ActionResult> Login(Signin model)
-    {
-        if (ModelState.IsValid)
-        {   /*
-                var LoginQuery = await _signInManager.PasswordSignInAsync(signin.Username, signin.Password,true,false);
-                if(LoginQuery.Succeeded)
-                {
-
-                    return Ok("Login Accepted");
-                }
-                else
-                {
-                    return BadRequest("login Failed");
-                }
-            
-                 */
-
-            var user = await _userManager.FindByNameAsync(model.Username);
-            if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
-            {
-                var userRoles = await _userManager.GetRolesAsync(user);
-
-                var authClaims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, user.UserName),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                };
-                var LoginUserRole = "User";
-                foreach (var userRole in userRoles)
-                {
-                    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
-                    LoginUserRole = userRole;
-                }
-
-                var token = GetToken(authClaims);
-
-                return Ok(new
-                {
-                    token = new JwtSecurityTokenHandler().WriteToken(token),
-                    expiration = token.ValidTo,
-                    role = LoginUserRole
-                }); ;
-            }
-            else
-                return Unauthorized();
-
-        }
-
-
-        return BadRequest("login Failed");
-
-
-
-    }
-
 
     [HttpPost]
     [Route("add-marked-case")]
-    public async Task<IActionResult> AddMarkedCase(MarkedCases model)
+    public async Task<IActionResult> AddMarkedCase(AddCaseMarkingRequest model)
     {
         model.CaseNo = HttpContext.Connection.RemoteIpAddress.ToString();
         return await _userService.AddMarkedCase(model);
@@ -189,5 +136,6 @@ public class AuthController : ControllerBase
     {
         return await _userService.GetMarkingHistory(dateFrom, dateTo);
     }
+
 
 }

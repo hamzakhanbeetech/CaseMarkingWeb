@@ -13,7 +13,12 @@ import { AddMarkedCaseComponent } from './components/add-marked-case/add-marked-
 const routes: Routes = [
 
   {path: '', component: AddMarkedCaseComponent },
-{path:'add-marked-case',component:AddMarkedCaseComponent}
+
+  {path:'add-marked-case',component:AddMarkedCaseComponent},
+  
+  {path:'courts', loadChildren: () => import('./modules/courts/courts.module').then(m => m.CourtsModule)},
+  
+  {path:'categories', loadChildren: () => import('./modules/categories/categories.module').then(m => m.CategoriesModule)}
 
 ]
 

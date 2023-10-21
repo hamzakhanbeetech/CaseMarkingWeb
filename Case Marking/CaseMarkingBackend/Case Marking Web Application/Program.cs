@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore; // Add this import for Entity Framework
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Case_Marking_Web_Application.DataAccessLayer;
 using Microsoft.AspNetCore.Authentication;
 using Case_Marking_Web_Application.Interfaces;
 using Case_Marking_Web_Application.Service;
+using DataAccessLayer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,13 +44,16 @@ builder.Services.AddAuthentication(options =>
                     };
                 });
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<ICaseCategoryService, CaseCategoryService>();
+builder.Services.AddTransient<ICourtsService, CourtsService>();
 
 // Add DbContext
-services.AddDbContext<ApplicationDbContext>(options =>
+services.AddDbContext<CaseMarkingDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))); // Use the configuration object to get the connection string
 
 // Configure Identity Framework
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<CaseMarkingDbContext>().AddDefaultTokenProviders();
+
 
 var app = builder.Build();
 

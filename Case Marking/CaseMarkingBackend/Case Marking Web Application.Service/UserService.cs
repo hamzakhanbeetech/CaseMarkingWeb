@@ -1,22 +1,33 @@
-﻿using Case_Marking_Web_Application.DataAccessLayer;
-using Case_Marking_Web_Application.Interfaces;
+﻿using Case_Marking_Web_Application.Interfaces;
 using Case_Marking_Web_Applications.Models;
+using Case_Marking_Web_Applications.Models.DTOs;
+using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Case_Marking_Web_Application.Service
 {
     public class UserService: ControllerBase, IUserService
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly CaseMarkingDbContext _dbContext;
 
-        public UserService(ApplicationDbContext dbContext)
+        public UserService(CaseMarkingDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public async Task<IActionResult> AddMarkedCase(MarkedCases model)
+        public async Task<IActionResult> AddMarkedCase(AddCaseMarkingRequest model)
         {
-            _dbContext.MarkedCases.Add(model);
+            var caseMarkingObj = new CaseMarking
+            {
+                CaseCategoryId = model.CaseCategoryId,
+                CourtId = model.CourtId,
+                CaseNo = model.CaseNo,
+                CaseTitle = model.CaseTitle,
+                MarkingDate = model.MarkedDate,
+            
+            };
+
+            _dbContext.CaseMarkings.Add(caseMarkingObj);
             _dbContext.SaveChanges();
 
             return Ok(new { Message = "Car rented successfully." });
@@ -24,27 +35,38 @@ namespace Case_Marking_Web_Application.Service
 
         public async Task<IActionResult> GetMarkingHistory(DateTime? dateFrom, DateTime? dateTo)
         {
-            var markingHistory = _dbContext.MarkedCases.Where(c => c.MarkedDate >= dateFrom && c.MarkedDate <= dateTo).ToList();
+
+            var result = (from cc in _dbContext.CaseCategories
+                          from c in _dbContext.Courts
+                          select new
+                          {
+                              caseCategory = cc.CategoryName,
+                              caseCategoryId = cc.CaseCategoryId,
+                              courtName = c.CourtName,
+                              courtId = c.CourtId,
+                              totalCasesMarked = (from cm in _dbContext.CaseMarkings
+                                                  where cm.CaseCategoryId == cc.CaseCategoryId && cm.CourtId == c.CourtId
+                                                  && cm.MarkingDate >= dateFrom && cm.MarkingDate <= dateTo
+                                                  select cm).Count()
+                          }).ToList();
+
+            var groupedResult = result
+                .GroupBy(r => r.caseCategory)
+                .Select(g => new
+                {
+                    caseCategory = g.Key,
+                    caseCategoryId = g.Select(cc => cc.caseCategoryId).FirstOrDefault(),
+                    stats = g.Select(r => new
+                    {
+                        courtName = r.courtName,
+                        courtID = r.courtId,
+                        totalCasesMarked = r.totalCasesMarked
+                    }).ToList()
+                }).ToList();
 
 
-            var result = _dbContext.MarkedCases
-            .Where(c => c.MarkedDate >= dateFrom && c.MarkedDate <= dateTo)
-            .GroupBy(c => new { c.CaseCategory })
-            .Select(g => new
-            {
-                CaseCategory = g.Key.CaseCategory,
-                Stats = g.GroupBy(c => c.CourtName)
-                         .Select(innerGroup => new
-                         {
-                             CourtName = innerGroup.Key,
-                             NumberOfCases = innerGroup.Count()
-                         })
-            })
-            .ToList();
 
-
-
-            return Ok(result);
+            return Ok(groupedResult);
         }
     }
 }

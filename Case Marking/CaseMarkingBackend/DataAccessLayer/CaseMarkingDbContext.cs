@@ -5,20 +5,11 @@ using System.Collections.Generic;
 
 namespace DataAccessLayer.Models;
 
-public partial class CaseMarkingDbContext 
+public partial class CaseMarkingDbContext : DbContext
 {
-
-    public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
-
-    public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; }
-
-    public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
-
-    public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
-
-    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
-
-    public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
+    public CaseMarkingDbContext(DbContextOptions options) : base(options)
+    {
+    }
 
     public virtual DbSet<CaseCategory> CaseCategories { get; set; }
 
@@ -26,10 +17,13 @@ public partial class CaseMarkingDbContext
 
     public virtual DbSet<Court> Courts { get; set; }
 
-    public virtual DbSet<MarkedCase> MarkedCases { get; set; }
-
     public virtual DbSet<User> Users { get; set; }
 
 
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+
+    }
 }

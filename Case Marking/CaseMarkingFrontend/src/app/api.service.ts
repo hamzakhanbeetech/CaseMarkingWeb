@@ -23,10 +23,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-
-
   addMarkedCase(caseData: any): Observable<any> {
-
 
     return this.http.post(environment.apiUrl+'Auth/add-marked-case', caseData).pipe(
 
@@ -35,16 +32,47 @@ export class ApiService {
     );
 
   }
-  getMarkedCaseHistory(dateFrom: any, dateTo: any): Observable<any> {
 
+  getMarkedCaseHistory(dateFrom: any, dateTo: any): Observable<any> {
 
     return this.http.get(environment.apiUrl+'Auth/get-marked-case-history?dateFrom='+dateFrom+'&dateTo='+dateTo).pipe(
 
       catchError(this.handleError)
 
-    );
-    
+    );    
 
+  }
+
+  createCategory(category: any): Observable<any> {
+    return this.http.post<any>(environment.apiUrl+'casecategory', category);
+  }
+
+  updateCategory(id: number, category: any): Observable<void> {
+    return this.http.put<void>(`${environment.apiUrl}casecategory /${id}`, category);
+  }
+
+  deleteCategory(id: number): Observable<void> {
+    return this.http.delete<void>(`${environment.apiUrl}casecategory/${id}`);
+  }
+  getCategories(): Observable<any> {
+    const url = `${environment.apiUrl}casecategory`;
+    return this.http.get(url);
+  }
+  
+  createCourt(court: any): Observable<any> {
+    return this.http.post<any>(environment.apiUrl+'courts', court);
+  }
+
+  updateCourt(id: number, court: any): Observable<void> {
+    return this.http.put<void>(`${environment.apiUrl}courts /${id}`, court);
+  }
+
+  deleteCourt(id: number): Observable<void> {
+    return this.http.delete<void>(`${environment.apiUrl}courts/${id}`);
+  }
+  getCourts(): Observable<any> {
+    const url = `${environment.apiUrl}courts`;
+    return this.http.get(url);
   }
 
   

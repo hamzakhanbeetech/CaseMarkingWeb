@@ -31,17 +31,17 @@
                             </div>
                             <div class="form-group mb-3">   
                                 <label>Case Category</label>             
-                                <select placeholder="Court Name" class="form-control" formControlName="caseCategory">
+                                <select placeholder="Court Name" class="form-control" formControlName="caseCategoryId">
                                     <option disabled value="0">--Select Case Category--</option>
-                                    <option *ngFor="let c of caseCategoryList" [ngValue]="c">{{ c }}</option>
+                                    <option *ngFor="let c of caseCategoryList" [ngValue]="c.caseCategoryId">{{ c.categoryName }}</option>
                                 </select>
                                 
                             </div>
                             <div class="form-group mb-3">   
                                 <label>Court Name</label>         
-                                <select placeholder="Court Name" class="form-control" formControlName="courtName">
+                                <select placeholder="Court Name" class="form-control" formControlName="courtId">
                                     <option [value]="1" [disabled]="true">--Select Court Name--</option>  
-                                    <option *ngFor="let c of courtList" [ngValue]="c">{{ c }}</option>
+                                    <option *ngFor="let c of courtList" [ngValue]="c.courtId">{{ c.courtName }}</option>
                                 </select>
                                 
                             </div>
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-
+      
     <div class="marking-history">
         <br><hr><br>
 
@@ -103,33 +103,34 @@
             </div>
         </div>
 
-        <table class="shadow p-3">
+        <button class="btn btn-secondary btn-xs" (click)="printTable()">Print</button>
+
+        <table border="1" cellpadding="3" id="history-data" class="shadow p-3" *ngIf="caseMarkingHistoryData.length>0">
             <thead>
-                <tr>
-                    <th></th>
-                    <th *ngFor="let courtName of courtList">{{ courtName }}</th>
-                    <th class="text-dark">Total</th> <!-- New column for the total count of each category -->
-                </tr>
+              <tr>
+                <th>Case Category</th>
+                <th *ngFor="let stat of caseMarkingHistoryData[0].stats">{{ stat.courtName }}</th>
+                <th>Total</th> <!-- Header for the last column total -->
+              </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of caseMarkingHistoryData">
-                    <td>{{ item.caseCategory }}</td>
-                    <td data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" *ngFor="let courtName of courtList" (click)="addNewCase(item.caseCategory, courtName)">
-                        {{ getCourtNumberOfCases(item.stats, courtName) }}
-                    </td>
-                    <td>{{ getTotalCasesForCategory(item.caseCategory) }}</td>
-                    <!-- New column for the total count of each category -->
-                </tr>
+              <tr *ngFor="let category of caseMarkingHistoryData; let i = index">
+                <td>{{ category.caseCategory }}</td>
+                <td data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="addNewCase(category.caseCategoryId, stat)"  *ngFor="let stat of category.stats">{{ stat.totalCasesMarked }}</td>
+                <td>{{ totalLastRow[i] }}</td> <!-- Last row total -->
+              </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <th>Total</th>
-                    <td *ngFor="let courtName of courtList">{{ getTotalCasesForCourt(courtName) }}</td>
-                    <td>{{ getTotalCasesForAllCategories() }}</td>
-                    <!-- New column for the total count of all categories -->
-                </tr>
+              <tr>
+                <th>Total</th> <!-- Header for the last row total -->
+                <td *ngFor="let total of totalLastColumn">{{ total }}</td>
+                <td>{{ sumOfArray(totalLastColumn) }}</td> 
+                <!-- Grand Total -->
+              </tr>
             </tfoot>
-        </table>
+          </table>
+          
+          
 
     </div>
 </div>

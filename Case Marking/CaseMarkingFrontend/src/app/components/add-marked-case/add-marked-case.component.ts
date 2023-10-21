@@ -12,23 +12,8 @@ export class AddMarkedCaseComponent implements OnInit {
 
   markedCaseFrom!: FormGroup
 
-  courtList = [
-    "DSJ",
-    "ASJ-1",
-    "ASJ-2",
-    "ASJ-3",
-    "ASJ-4",
-    "ASJ-5",
-    "ASJ-6",
-    "ASJ-7",
-    "ASJ-8",
-  ]
-  caseCategoryList = [
-    "Civil Appeal",
-    "Review Petition",
-    "Land Aquasition",
-    "Narcotics"
-  ]
+  courtList: any[] = []
+  caseCategoryList: any[] = []
 
   caseMarkingHistoryData: any[] = []
 
@@ -49,16 +34,64 @@ export class AddMarkedCaseComponent implements OnInit {
 
       caseTitle: ['', Validators.required],
 
-      caseCategory: ['', Validators.required],
+      caseCategoryId: ['', Validators.required],
 
       markedDate: [formatDate(this.now, 'yyyy-MM-ddTHH:mm', 'en'), Validators.required],
 
-      courtName: ['', Validators.required]
+      courtId: ['', Validators.required]
 
     });
-
+    this.getCaseCategoryList();
+    this.getCourtList();
     this.getMarkedCaseHistory();
 
+  }
+
+  getCourtList(){
+    this.apiService.getCourts().subscribe(resp => {
+      this.courtList = resp
+    })
+  }
+
+  getCaseCategoryList(){
+    this.apiService.getCategories().subscribe(resp => {
+      this.caseCategoryList = resp
+    })
+
+  }
+
+  // Calculate totals
+  totalLastRow: any[] = [];
+  totalLastColumn: any[] = [];
+  calculateTotals() {
+    // Calculate total for the last column (court totals)
+    this.totalLastColumn = this.caseMarkingHistoryData[0].stats.map((stat:any) => {
+      return this.caseMarkingHistoryData.reduce((acc, category) => {
+        const courtStat = category.stats.find((courtStat:any) => courtStat.courtName === stat.courtName);
+        return acc + (courtStat ? courtStat.totalCasesMarked : 0);
+      }, 0);
+    });
+
+    // Calculate total for the last row (category totals)
+    this.totalLastRow = this.caseMarkingHistoryData.map(category =>
+      category.stats.reduce((acc:any, stat:any) => acc + stat.totalCasesMarked, 0)
+    );
+  }
+
+  sumOfArray(listArray:any[]){
+    return listArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  }
+
+   // Method to print the table
+   printTable() {
+    var divToPrint=document.getElementById("history-data");
+    var newWin= window.open("");
+    if(divToPrint){
+      newWin?.document.write(divToPrint.outerHTML);
+      newWin?.print();
+      newWin?.close();
+
+    }
   }
 
   onSubmitMarkedCase() {
@@ -66,6 +99,8 @@ export class AddMarkedCaseComponent implements OnInit {
     let request = {
       ...this.markedCaseFrom.value
     }
+
+    console.log("request ", request)
 
     this.apiService.addMarkedCase(request).subscribe(resp => {
       alert("Successfully Added Marked Case")
@@ -82,6 +117,7 @@ export class AddMarkedCaseComponent implements OnInit {
     this.apiService.getMarkedCaseHistory(this.dateFrom, this.dateTo).subscribe(resp => {
       console.log("history response ", resp)
       this.caseMarkingHistoryData = resp
+      this.calculateTotals()
     }, err => {
       console.log("history err ", err)
     })
@@ -128,9 +164,10 @@ export class AddMarkedCaseComponent implements OnInit {
     return totalCases;
   }
 
-  addNewCase(caseCat:any, courtName:any){
-    this.markedCaseFrom.controls['courtName'].setValue(courtName);
-    this.markedCaseFrom.controls['caseCategory'].setValue(caseCat);
+  addNewCase(caseCatId:any, court:any){
+    console.log("hiii ", caseCatId, court)
+    this.markedCaseFrom.controls['courtId'].setValue(court.courtID);
+    this.markedCaseFrom.controls['caseCategoryId'].setValue(caseCatId);
     this.markedCaseFrom.controls['markedDate'].setValue(formatDate(this.now, 'yyyy-MM-ddTHH:mm', 'en'));
     this.markedCaseFrom.controls['caseNo'].setValue('');
     this.markedCaseFrom.controls['caseTitle'].setValue('');
