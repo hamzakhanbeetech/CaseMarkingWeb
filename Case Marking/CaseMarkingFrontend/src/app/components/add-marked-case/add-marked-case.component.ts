@@ -30,7 +30,7 @@ export class AddMarkedCaseComponent implements OnInit {
     "Narcotics"
   ]
 
-  caseMarkingHistoryData: any
+  caseMarkingHistoryData: any[] = []
 
   now: Date = new Date();
 
