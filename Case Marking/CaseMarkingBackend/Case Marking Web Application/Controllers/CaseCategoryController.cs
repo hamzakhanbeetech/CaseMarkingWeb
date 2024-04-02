@@ -1,4 +1,6 @@
 ﻿using Case_Marking_Web_Application.Interfaces;
+using Case_Marking_Web_Applications.Models;
+using Case_Marking_Web_Applications.Models.DTOs;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,22 +21,15 @@ namespace Case_Marking_Web_Application.Controllers
         }
 
         // GET: api/<CaseCategoryController>
-        [HttpGet]
-        public List<CaseCategory> Get()
+        [HttpGet("{userId}")]
+        public List<CaseCategory> Get(int userId)
         {
-            return _caseCategoryService.GetCaseCategories();
+            return _caseCategoryService.GetCaseCategories(userId);
         }
-
-    // GET api/<CaseCategoryController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
-    {
-        return "value";
-    }
 
     // POST api/<CaseCategoryController>
     [HttpPost]
-    public CaseCategory Post(CaseCategory caseCategory)
+    public CaseCategory Post(AddCaseCategoryRequest caseCategory)
     {
             return _caseCategoryService.AddCaseCategory(caseCategory);
     }

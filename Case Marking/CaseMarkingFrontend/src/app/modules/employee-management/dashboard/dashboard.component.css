@@ -1,0 +1,5 @@
+
+.modal{
+    background: rgba(16, 16, 16, 0.3);
+    backdrop-filter: blur(20px);
+  }

@@ -1,17 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-public class LoginViewModel
+public class LoginModel
 {
-    [Required]
-    [EmailAddress]
-    [Display(Name = "Email")]
-    public required string Email { get; set; }
+    public string UserName { get; set; }
 
-    [Required]
-    [DataType(DataType.Password)]
-    [Display(Name = "Password")]
-    public required string Password { get; set; }
-
-    [Display(Name = "Remember me")]
-    public bool RememberMe { get; set; }
+    public string Password { get; set; }
 }

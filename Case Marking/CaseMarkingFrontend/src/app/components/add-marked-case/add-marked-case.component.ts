@@ -1,7 +1,7 @@
 import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-add-marked-case',
@@ -22,10 +22,12 @@ export class AddMarkedCaseComponent implements OnInit {
   dateFrom = formatDate(new Date(this.now.getFullYear(), this.now.getMonth(), 1), 'yyyy-MM-ddTHH:mm', 'en')
 
   dateTo = formatDate(formatDate(this.now, 'yyyy-MM-ddTHH:mm', 'en'), 'yyyy-MM-ddTHH:mm', 'en');
+  currentUser: any
 
   constructor(private formBuilder: FormBuilder, private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.currentUser = JSON.parse(localStorage.getItem("userData") ?? "").userData
 
 
     this.markedCaseFrom = this.formBuilder.group({
@@ -47,14 +49,14 @@ export class AddMarkedCaseComponent implements OnInit {
 
   }
 
-  getCourtList(){
-    this.apiService.getCourts().subscribe(resp => {
+  getCourtList() {
+    this.apiService.getCourts(this.currentUser.identityId).subscribe(resp => {
       this.courtList = resp
     })
   }
 
-  getCaseCategoryList(){
-    this.apiService.getCategories().subscribe(resp => {
+  getCaseCategoryList() {
+    this.apiService.getCategories(this.currentUser.identityId).subscribe(resp => {
       this.caseCategoryList = resp
     })
 
@@ -65,28 +67,28 @@ export class AddMarkedCaseComponent implements OnInit {
   totalLastColumn: any[] = [];
   calculateTotals() {
     // Calculate total for the last column (court totals)
-    this.totalLastColumn = this.caseMarkingHistoryData[0].stats.map((stat:any) => {
+    this.totalLastColumn = this.caseMarkingHistoryData[0].stats.map((stat: any) => {
       return this.caseMarkingHistoryData.reduce((acc, category) => {
-        const courtStat = category.stats.find((courtStat:any) => courtStat.courtName === stat.courtName);
+        const courtStat = category.stats.find((courtStat: any) => courtStat.courtName === stat.courtName);
         return acc + (courtStat ? courtStat.totalCasesMarked : 0);
       }, 0);
     });
 
     // Calculate total for the last row (category totals)
     this.totalLastRow = this.caseMarkingHistoryData.map(category =>
-      category.stats.reduce((acc:any, stat:any) => acc + stat.totalCasesMarked, 0)
+      category.stats.reduce((acc: any, stat: any) => acc + stat.totalCasesMarked, 0)
     );
   }
 
-  sumOfArray(listArray:any[]){
+  sumOfArray(listArray: any[]) {
     return listArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
   }
 
-   // Method to print the table
-   printTable() {
-    var divToPrint=document.getElementById("history-data");
-    var newWin= window.open("");
-    if(divToPrint){
+  // Method to print the table
+  printTable() {
+    var divToPrint = document.getElementById("history-data");
+    var newWin = window.open("");
+    if (divToPrint) {
       newWin?.document.write(divToPrint.outerHTML);
       newWin?.print();
       newWin?.close();
@@ -96,8 +98,10 @@ export class AddMarkedCaseComponent implements OnInit {
 
   onSubmitMarkedCase() {
 
+
     let request = {
-      ...this.markedCaseFrom.value
+      ...this.markedCaseFrom.value,
+      addedByUserId: this.currentUser.identityId
     }
 
     console.log("request ", request)
@@ -114,7 +118,7 @@ export class AddMarkedCaseComponent implements OnInit {
 
   getMarkedCaseHistory() {
 
-    this.apiService.getMarkedCaseHistory(this.dateFrom, this.dateTo).subscribe(resp => {
+    this.apiService.getMarkedCaseHistory(this.currentUser.identityId, this.dateFrom, this.dateTo).subscribe(resp => {
       console.log("history response ", resp)
       this.caseMarkingHistoryData = resp
       this.calculateTotals()
@@ -164,7 +168,7 @@ export class AddMarkedCaseComponent implements OnInit {
     return totalCases;
   }
 
-  addNewCase(caseCatId:any, court:any){
+  addNewCase(caseCatId: any, court: any) {
     console.log("hiii ", caseCatId, court)
     this.markedCaseFrom.controls['courtId'].setValue(court.courtID);
     this.markedCaseFrom.controls['caseCategoryId'].setValue(caseCatId);

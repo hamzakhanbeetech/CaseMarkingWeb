@@ -14,7 +14,8 @@ namespace Case_Marking_Web_Applications.Models.DTOs
         public string CaseTitle { get; set; }
         public int CourtId { get; set; }
         public DateTime MarkedDate { get; set; }
-        public string CreatedBy { get; set;}
+        public string? CreatedBy { get; set; }
+        public int? AddedByUserId { get; set; }
     }
     
 }

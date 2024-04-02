@@ -8,6 +8,6 @@ namespace Case_Marking_Web_Application.Interfaces
     public interface IUserService
     {
         public Task<IActionResult> AddMarkedCase(AddCaseMarkingRequest model);
-        public Task<IActionResult> GetMarkingHistory(DateTime? dateFrom, DateTime? dateTo);
+        public Task<IActionResult> GetMarkingHistory(int userId, DateTime? dateFrom, DateTime? dateTo);
     }
 }

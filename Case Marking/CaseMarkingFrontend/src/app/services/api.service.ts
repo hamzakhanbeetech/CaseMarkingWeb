@@ -33,9 +33,9 @@ export class ApiService {
 
   }
 
-  getMarkedCaseHistory(dateFrom: any, dateTo: any): Observable<any> {
+  getMarkedCaseHistory(userId:any, dateFrom: any, dateTo: any): Observable<any> {
 
-    return this.http.get(environment.apiUrl+'Auth/get-marked-case-history?dateFrom='+dateFrom+'&dateTo='+dateTo).pipe(
+    return this.http.get(environment.apiUrl+'Auth/get-marked-case-history/'+userId+'?dateFrom='+dateFrom+'&dateTo='+dateTo).pipe(
 
       catchError(this.handleError)
 
@@ -54,8 +54,8 @@ export class ApiService {
   deleteCategory(id: number): Observable<void> {
     return this.http.delete<void>(`${environment.apiUrl}casecategory/${id}`);
   }
-  getCategories(): Observable<any> {
-    const url = `${environment.apiUrl}casecategory`;
+  getCategories(userId:any): Observable<any> {
+    const url = `${environment.apiUrl}casecategory/${userId}`;
     return this.http.get(url);
   }
   
@@ -70,8 +70,8 @@ export class ApiService {
   deleteCourt(id: number): Observable<void> {
     return this.http.delete<void>(`${environment.apiUrl}courts/${id}`);
   }
-  getCourts(): Observable<any> {
-    const url = `${environment.apiUrl}courts`;
+  getCourts(userId:any): Observable<any> {
+    const url = `${environment.apiUrl}courts/${userId}`;
     return this.http.get(url);
   }
 

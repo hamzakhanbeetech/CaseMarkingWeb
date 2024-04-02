@@ -83,3 +83,4 @@ E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\ob
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.sourcelink.json

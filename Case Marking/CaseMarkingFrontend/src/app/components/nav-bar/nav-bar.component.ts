@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent {
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private authService: AuthService){}
 
   signOut(): void {
     localStorage.removeItem("userData")
@@ -24,6 +25,11 @@ export class NavBarComponent {
       return true
     }
     return false;
+  }
+
+  logout(){
+    this.authService.logOutUser()
+
   }
 
 }

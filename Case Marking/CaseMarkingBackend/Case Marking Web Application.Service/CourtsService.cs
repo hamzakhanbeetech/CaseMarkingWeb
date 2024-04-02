@@ -1,4 +1,5 @@
 ﻿using Case_Marking_Web_Application.Interfaces;
+using Case_Marking_Web_Applications.Models.DTOs;
 using DataAccessLayer.Models;
 using System;
 using System.Collections.Generic;
@@ -16,17 +17,26 @@ namespace Case_Marking_Web_Application.Service
         {
             _dbContext = dbContext;
         }
-        public List<Court> GetCourts()
+        public List<Court> GetCourts(int userId)
         {
-            var caseCategoryList = _dbContext.Courts.ToList();
+            var caseCategoryList = _dbContext.Courts.Where(c => c.UserId == userId).ToList();
             return caseCategoryList;
         }
 
-        public Court AddCourt(Court caseCategory)
+        public Court AddCourt(AddCourtRequest court)
         {
-            _dbContext.Courts.Add(caseCategory);
+            var courtObj = new Court
+            {
+                CourtName = court.CourtName,
+                Status = court.Status,
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now,
+                UserId = court.UserId
+            };
+
+            _dbContext.Courts.Add(courtObj);
             _dbContext.SaveChanges();
-            return caseCategory;
+            return courtObj;
         }
         public Court? DeleteCourt(int id)
         {

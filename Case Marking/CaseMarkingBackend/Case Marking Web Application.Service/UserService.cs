@@ -24,6 +24,8 @@ namespace Case_Marking_Web_Application.Service
                 CaseNo = model.CaseNo,
                 CaseTitle = model.CaseTitle,
                 MarkingDate = model.MarkedDate,
+                CreatedBy = model.CreatedBy,
+                UserId = model.AddedByUserId ?? null
             
             };
 
@@ -33,11 +35,13 @@ namespace Case_Marking_Web_Application.Service
             return Ok(new { Message = "Car rented successfully." });
         }
 
-        public async Task<IActionResult> GetMarkingHistory(DateTime? dateFrom, DateTime? dateTo)
+        public async Task<IActionResult> GetMarkingHistory(int userId, DateTime? dateFrom, DateTime? dateTo)
         {
 
             var result = (from cc in _dbContext.CaseCategories
+                          where cc.UserId == userId
                           from c in _dbContext.Courts
+                          where c.UserId ==  userId
                           select new
                           {
                               caseCategory = cc.CategoryName,

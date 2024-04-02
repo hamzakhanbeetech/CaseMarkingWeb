@@ -28,3 +28,4 @@ E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web A
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.csproj.CoreCompileInputs.cache
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.csproj.CopyComplete
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\ref\Case Marking Web Application.Interfaces.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application.Interfaces\obj\Debug\net7.0\Case Marking Web Application.Interfaces.sourcelink.json

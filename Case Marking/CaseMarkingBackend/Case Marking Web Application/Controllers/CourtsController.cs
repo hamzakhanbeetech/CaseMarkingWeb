@@ -1,4 +1,5 @@
 ﻿using Case_Marking_Web_Application.Interfaces;
+using Case_Marking_Web_Applications.Models.DTOs;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,22 +20,16 @@ namespace Case_Marking_Web_Application.Controllers
         }
 
         // GET: api/<CaseCategoryController>
-        [HttpGet]
-        public List<Court> Get()
-        {
-            return _courtsService.GetCourts();
-        }
+        [HttpGet("{id}")]
 
-    // GET api/<CaseCategoryController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
-    {
-        return "value";
-    }
+        public List<Court> Get(int id)
+        {
+            return _courtsService.GetCourts(id);
+        }
 
     // POST api/<CaseCategoryController>
     [HttpPost]
-    public Court Post(Court caseCategory)
+    public Court Post(AddCourtRequest caseCategory)
     {
             return _courtsService.AddCourt(caseCategory);
     }

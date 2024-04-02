@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ApiService } from 'src/app/api.service';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-courts',
@@ -14,6 +14,7 @@ export class CourtsComponent implements OnInit {
   courts: any[] = [];
 
   editingCourt! : any
+  currentUser: any
   
   constructor( private fb: FormBuilder, private apiService: ApiService) {
 
@@ -24,23 +25,25 @@ export class CourtsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loadCourts();
+    this.currentUser = JSON.parse(localStorage.getItem("userData") ?? "").userData
+
+    this.loadCourts(this.currentUser.identityId);
   }
 
-  loadCourts() {
-    this.apiService.getCourts().subscribe((data:any) => {
+  loadCourts(userId:any) {
+    this.apiService.getCourts(userId).subscribe((data:any) => {
       this.courts = data;
     });
   }
 
   saveCourt() {
     if (this.CourtForm.valid) {
-      const newCourt: any = this.CourtForm.value as any;
+      const newCourt: any = {...this.CourtForm.value, userId: this.currentUser.identityId} as any;
 
       this.apiService.createCourt(newCourt).subscribe(() => {
         alert("Successfully Added New Court")
         this.CourtForm.reset();
-        this.loadCourts();
+        this.loadCourts(this.currentUser.identityId);
       }, (err:any) => {        
         alert("Error Whil Added New Court")
       });
@@ -59,7 +62,7 @@ export class CourtsComponent implements OnInit {
     }
     this.apiService.updateCourt(this.editingCourt.CourtID, this.editingCourt).subscribe(() => {
       // Court updated successfully; reload the Court list.
-      this.loadCourts();
+      this.loadCourts(this.currentUser.identityId);
       // Reset the editingCourt variable or close the edit form/dialog.
       this.editingCourt = null;
     });
@@ -69,7 +72,7 @@ export class CourtsComponent implements OnInit {
     
     this.apiService.deleteCourt(court.courtId).subscribe(() => {
       // Court deleted successfully; reload the Court list
-      this.loadCourts();
+      this.loadCourts(this.currentUser.identityId);
     });
   }
 
