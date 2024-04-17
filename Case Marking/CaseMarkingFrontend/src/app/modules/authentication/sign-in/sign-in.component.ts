@@ -26,9 +26,14 @@ export class SignInComponent {
       password: this.password
     }
 
-    this.authService.login(request).subscribe(resp => {
+    this.authService.login(request).subscribe((resp:any) => {
       localStorage.setItem("userData", JSON.stringify(resp))
-      this.router.navigate(['/'])
+      if(resp.userData.roleId == "admin"){
+        this.router.navigate(['/employee-management'])
+
+      }else{
+        this.router.navigate(['/'])
+      }
       
     }, err => {
       alert("Something Went Wrong!!")

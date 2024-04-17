@@ -4,20 +4,19 @@
         <h1 class="m-5 text-center">Employee Management</h1>
     </div>
 
-
-    <div class="row list-top">
-        <div class="col-md-3">
-            <button class="btn btn-secondary m-2" (click)="openModalOtpVerify()">+ Add Employee</button>
-
-        </div>
-        <div class="col-md-3 offset-md-6">
-            <input class="form-control" placeholder="filter employee">
-
-        </div>
-    </div>
     <hr>
 
     <div class="row employee-list shadow p-4 mb-4">
+        <div class="row list-top">
+            <div class="col-md-3">
+                <button class="btn btn-primary m-2" (click)="openModalOtpVerify()">+ Add Employee</button>
+    
+            </div>
+            <div class="col-md-3 offset-md-6">
+                <input class="form-control border-4" placeholder="Filter Employee">
+    
+            </div>
+        </div>
 
         <table class="table table-striped">
             <thead class="table-dark">
@@ -28,101 +27,46 @@
                     <th scope="col">Father Name</th>
                     <th scope="col">Phone</th>
                     <th scope="col">CNIC</th>
-                    <th scope="col">Job Title</th>
-                    <th scope="col">Working As</th>
-                    <th scope="col">BPS</th>
-                    <th scope="col">Posted At</th>
+                    <th scope="col">Desgination</th>
+                    <th scope="col">Pay Scale</th>
+                    <th scope="col">Join Date</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+                <tr *ngFor="let employee of employeeList">
+                    <th scope="row">{{ employee.employeeID }}</th>
+                    <td>{{ employee.firstname }}</td>
+                    <td>{{ employee.lastname }}</td>
+                    <td>{{ employee.fathername }}</td>
+                    <td>{{ employee.phoneNumber }}</td>
+                    <td>{{ employee.cnic }}</td>
+                    <td>{{ employee.desgination }}</td>
+                    <td>{{ 'BPS-'+employee.payScale }}</td>
+                    <td>{{ employee.dateOfJoining | date }}</td>
                     <td>
                         <a class="m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                <path fill-rule="evenodd"
+                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                            </svg>
                         </a>
                         <a class="m-1" routerLink="/employee-management/1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                            </svg>
                         </a>
                         <a class="m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-x-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z"/>
-                              </svg>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>
-                        <a class="m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                              </svg>
-                        </a>
-                        <a class="m-1" routerLink="/employee-management/1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                              </svg>
-                        </a>
-                        <a class="m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-x-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z"/>
-                              </svg>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>
-                        <a class="m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                              </svg>
-                        </a>
-                        <a class="m-1" routerLink="/employee-management/1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                              </svg>
-                        </a>
-                        <a class="m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-x-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-x-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                            </svg>
                         </a>
                     </td>
                 </tr>
@@ -157,81 +101,80 @@
 
                 </div>
                 <div class="card-body">
-                    
-                    <div class="row p-2">
-                        <label for="">Select Upto 4 Images</label>
-                        <input class="form-control" type="file" (change)="onFileSelected($event)" accept="image/*" multiple>
-    
-                        <div class="row m-1">
-                            <div class="col-3" *ngFor="let image of selectedImages; let i = index">
-                                -
-                                <img width="120px" height="150px" [src]="image" alt="Selected Image">
-                                <span role="button" (click)="removeImage(i)">❌</span>
-    
-                            </div>    
+
+                    <form [formGroup]="employeeForm" (ngSubmit)="addEmployee()">
+                        <div class="row p-2">
+                            <input formControlName="profileImage" class="form-control" type="file"
+                                (change)="onFileSelected($event)" accept="image/*" multiple>
+                            <div class="row m-1">
+                                <div class="col-3" *ngIf="selectedImage">
+                                    -
+                                    <img width="120px" height="150px" [src]="selectedImage" alt="Selected Image">
+                                    <span role="button" (click)="removeImage()">❌</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row p-2">
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="First Name" class="form-control bg-input ">    
-
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="firstName" placeholder="First Name"
+                                    class="form-control bg-input">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="lastName" placeholder="Last Name" class="form-control bg-input">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Last Name" class="form-control bg-input ">    
 
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="fatherName" placeholder="Father Name"
+                                    class="form-control bg-input">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="cnic" placeholder="CNIC" class="form-control bg-input">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row p-2">
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Father Name" class="form-control bg-input ">    
-
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="phoneNumber" placeholder="Phone Number"
+                                    class="form-control bg-input">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="desgination" placeholder="Desgination"
+                                    class="form-control bg-input">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="CNIC" class="form-control bg-input ">    
 
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="dateOfJoining" placeholder="Date Of Joining"
+                                    class="form-control bg-input" type="date">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="workAs" placeholder="Work As" class="form-control bg-input">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row p-2">
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Phone Number" class="form-control bg-input ">    
-
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="payScale" placeholder="Pay Scale" class="form-control bg-input">
+                            </div>
+                            <!-- Add more input fields as needed -->
                         </div>
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Job Title" class="form-control bg-input ">    
 
+                        <div class="row p-2">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row p-2">
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Post At" class="form-control bg-input ">    
-
+                        <div class="row p-2">
+                            <div class="col-12">
+                                <button type="button" (click)="closeModalOtpVerify()" class="btn btn-cancel">Cancel</button>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Job Title" class="form-control bg-input ">    
-
-                        </div>
-                    </div>
-
-                    <div class="row p-2">
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="Work As" class="form-control bg-input ">    
-
-                        </div>
-                        <div class="col-6">
-                            <input type="text" [(ngModel)]="firstName" placeholder="BPS" class="form-control bg-input ">    
-
-                        </div>
-                    </div>
-                    <div class="row center mt-4">
-                        <button class="btn btn-cancel" (click)="closeModalOtpVerify()">Cancel</button>
-                        <button class="btn btn-primary ml-3" (click)="addEmployee()">Add
-                            Employee</button>
-
-                    </div>
+                    </form>
 
                 </div>
             </div>

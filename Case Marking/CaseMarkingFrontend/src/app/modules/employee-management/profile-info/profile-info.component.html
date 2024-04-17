@@ -8,13 +8,15 @@
                 <div class="card-header">Profile Picture</div>
                 <div class="card-body text-center">
                     <!-- Profile picture image-->
-                    <img class="img-account-profile rounded-circle mb-2"
-                        src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                        <p class="fw-bold">Currently Working At</p>
-                        <p class="fw-bold">Court/Office: ASJ-I</p>
-                        <p class="fw-bold">Starting Date: 02-01-2023 </p>
-                        <p class="fw-bold">Duration: 7 month 5 days </p>
-                        <button class="btn btn-primary btn-xs">Transfer</button>
+                    <img *ngIf="!employeeObj && !employeeObj?.profileImage" class="img-account-profile rounded-circle mb-2"
+                        src="/assets/avatar.png" alt="">
+                    <img width="200px" height="360px" *ngIf="employeeObj && employeeObj?.profileImage" class="img-account-profile rounded-circle mb-2"
+                        [src]="'data:image/png;base64,'+employeeObj.profileImage" alt="">
+                    <p class="fw-bold">Currently Working At</p>
+                    <p class="fw-bold">Court/Office: {{employementHistory?.[0]?.officeName ?? ""}}</p>
+                    <p class="fw-bold">{{employementHistory?.[0]?.transferDate | date }} </p>
+                    <p class="fw-bold">{{ 'Duration : ' + calculateDiff(employementHistory?.[0]?.transferDate) + ' days' }} </p>
+                    <button (click)="openModalOtpVerify()" class="btn btn-primary btn-xs">Transfer</button>
                 </div>
             </div>
         </div>
@@ -24,127 +26,99 @@
             <div class="card mb-4">
                 <div class="card-header">Account Details</div>
                 <div class="card-body">
-                    <form>
-                        <!-- Form Group (username)-->
-                        <div class="mb-3">
-                            <label class="small mb-1" for="inputUsername">Username (how your name will appear to other
-                                users on the site)</label>
-                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username"
-                                value="username">
-                        </div>
-                        <!-- Form Row-->
+                    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                        <!-- First Name & Last Name -->
                         <div class="row gx-3 mb-3">
-                            <!-- Form Group (first name)-->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputFirstName">First name</label>
-                                <input class="form-control" id="inputFirstName" type="text"
-                                    placeholder="Enter your first name" value="Valerie">
+                                <input formControlName="firstname" class="form-control" id="inputFirstName" type="text"
+                                    placeholder="Enter your first name">
                             </div>
-                            <!-- Form Group (last name)-->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputLastName">Last name</label>
-                                <input class="form-control" id="inputLastName" type="text"
-                                    placeholder="Enter your last name" value="Luna">
+                                <input formControlName="lastname" class="form-control" id="inputLastName" type="text"
+                                    placeholder="Enter your last name">
                             </div>
                         </div>
-                        <!-- Form Row        -->
+                        <!-- Additional Fields -->
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <label class="small mb-1" for="inputFatherName">Father name</label>
+                                <input formControlName="fathername" type="text" class="form-control bg-input"
+                                    placeholder="Father Name">
+                            </div>
+                            <div class="col-6">
+                                <label class="small mb-1" for="inputCNIC">CNIC</label>
+                                <input formControlName="cnic" type="text" class="form-control bg-input"
+                                    placeholder="CNIC">
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <label class="small mb-1" for="inputPostAt">Date Of Joining</label>
+                                <input formControlName="dateOfJoining" type="text" class="form-control bg-input"
+                                    placeholder="dateOfJoining">
+                            </div>
+                            <div class="col-6">
+                                <label class="small mb-1" for="inputJobTitle">Desgination</label>
+                                <input formControlName="desgination" type="text" class="form-control bg-input"
+                                    placeholder="Desgination">
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <label class="small mb-1" for="inputWorkAs">Working As</label>
+                                <input formControlName="workAs" type="text" class="form-control bg-input"
+                                    placeholder="Work As">
+                            </div>
+                            <div class="col-6">
+                                <label class="small mb-1" for="inputBPS">Pay Scale</label>
+                                <input formControlName="payScale" type="text" class="form-control bg-input"
+                                    placeholder="payScale">
+                            </div>
+                        </div>
+                        <!-- phone -->
                         <div class="row gx-3 mb-3">
-                            <!-- Form Group (organization name)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputOrgName">Organization name</label>
-                                <input class="form-control" id="inputOrgName" type="text"
-                                    placeholder="Enter your organization name" value="Start Bootstrap">
-                            </div>
-                            <!-- Form Group (location)-->
-                            <div class="col-md-6">
-                                <label class="small mb-1" for="inputLocation">Location</label>
-                                <input class="form-control" id="inputLocation" type="text"
-                                    placeholder="Enter your location" value="San Francisco, CA">
-                            </div>
-                        </div>
-                        <!-- Form Group (email address)-->
-                        <div class="mb-3">
-                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                            <input class="form-control" id="inputEmailAddress" type="email"
-                                placeholder="Enter your email address" value="name@example.com">
-                        </div>
-                        <!-- Form Row-->
-                        <div class="row gx-3 mb-3">
-                            <!-- Form Group (phone number)-->
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputPhone">Phone number</label>
-                                <input class="form-control" id="inputPhone" type="tel"
-                                    placeholder="Enter your phone number" value="555-123-4567">
+                                <input formControlName="phoneNumber" class="form-control" id="inputPhone" type="tel"
+                                    placeholder="Enter your phone number">
                             </div>
-                            <!-- Form Group (birthday)-->
+                        </div>
+                        <!-- Username -->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputUsername">Username</label>
+                            <input formControlName="username" class="form-control" id="inputUsername" type="text"
+                                placeholder="Enter your username">
+                        </div>
+                        <!-- Organization Name & Location -->
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                <input formControlName="orgName" class="form-control" id="inputOrgName" type="text"
+                                    placeholder="Enter your organization name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input formControlName="location" class="form-control" id="inputLocation" type="text"
+                                    placeholder="Enter your location">
+                            </div>
+                        </div>
+                        <!-- Email Address & Phone Number -->
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                <input formControlName="emailAddress" class="form-control" id="inputEmailAddress"
+                                    type="email" placeholder="Enter your email address">
+                            </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBirthday">Birthday</label>
-                                <input class="form-control" id="inputBirthday" type="text" name="birthday"
-                                    placeholder="Enter your birthday" value="06/10/1988">
+                                <input formControlName="birthday" class="form-control" id="inputBirthday" type="date"
+                                    name="birthday" placeholder="Enter your birthday">
                             </div>
                         </div>
-
-                        <div class="row p-2">
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">Father name</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="Father Name"
-                                    class="form-control bg-input ">
-
-                            </div>
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">CNIC</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="CNIC"
-                                    class="form-control bg-input ">
-
-                            </div>
-                        </div>
-
-                        <div class="row p-2">
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">Phone number</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="Phone Number"
-                                    class="form-control bg-input ">
-
-                            </div>
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">Date of Birth</label>
-                                <input type="datetime-local" [(ngModel)]="firstName" placeholder="Date of Birth"
-                                    class="form-control bg-input ">
-
-                            </div>
-                        </div>
-
-                        <div class="row p-2">
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">Pasted At</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="Post At"
-                                    class="form-control bg-input ">
-
-                            </div>
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">Job title</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="Job Title"
-                                    class="form-control bg-input ">
-
-                            </div>
-                        </div>
-
-                        <div class="row p-2">
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">Working As</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="Work As"
-                                    class="form-control bg-input ">
-
-                            </div>
-                            <div class="col-6">
-                                <label class="small mb-1" for="inputFirstName">BPS</label>
-                                <input type="text" [(ngModel)]="firstName" placeholder="BPS"
-                                    class="form-control bg-input ">
-
-                            </div>
-                        </div>
-                        <!-- Save changes button-->
-                        <button class="btn btn-primary" type="button">Save changes</button>
+                        <!-- Save changes button -->
+                        <button class="btn btn-primary" type="submit">Save changes</button>
                     </form>
                 </div>
             </div>
@@ -159,44 +133,107 @@
                         <thead class="table-dark">
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">Job Title</th>
-                                <th scope="col">Working As</th>
+                                <th scope="col">Previous Position</th>
+                                <th scope="col">New Position</th>
                                 <th scope="col">BPS</th>
                                 <th scope="col">Date From</th>
                                 <th scope="col">Date To</th>
-                                <th scope="col">Posted At</th>
+                                <th scope="col">Office</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
+                            <tr *ngFor="let empHistory of employementHistory">
+                                <th scope="row">{{ empHistory.employmentHistoryID}}</th>
+                                <td>{{ empHistory.previousPosition}}</td>
+                                <td>{{ empHistory.newPosition}}</td>
+                                <td>{{ empHistory.payScale}}</td>
+                                <td> {{ empHistory.transferDate | date}} </td>
                                 <td> {{ today | date}} </td>
-                                <td> {{ today | date}} </td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td> {{ today | date}} </td>
-                                <td> {{ today | date}} </td>
-                                <td>@fat</td>
+                                <td>{{ empHistory.officeName }}</td>
                             </tr>
 
                         </tbody>
                     </table>
                 </div>
 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayOtpModal}">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-header bg-header">
+                    <div class="row">
+                        <div class="col-11">
+                            <h3>Transfer Employee</h3>
+                        </div>
+                        <div class="col-1" role="button">
+                            <svg (click)="closeModalOtpVerify()" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.8575 0.536654L7.5 4.89439C6.04758 3.44244 4.59469 1.98908 3.14203 0.536654C1.46156 -1.14381 -1.14328 1.46197 0.535781 3.1429C1.98867 4.59439 3.44203 6.04798 4.89328 7.5004C3.44137 8.95349 1.98887 10.406 0.535781 11.8579C-1.14328 13.5379 1.4618 16.143 3.14203 14.4642C4.59445 13.0113 6.04734 11.5581 7.49977 10.1062L11.8573 14.4642C13.5377 16.1442 16.1433 13.5381 14.4635 11.8579C13.0106 10.405 11.5582 8.95259 10.1048 7.49994C11.558 6.04704 13.0104 4.59415 14.4635 3.1415C16.1435 1.46197 13.538 -1.14381 11.8573 0.537592"
+                                    fill="#545050" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+
+                    <form [formGroup]="employeeForm" (ngSubmit)="transferEmployee()">
+
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="previousPosition" placeholder="Previous Position"
+                                    class="form-control bg-input">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="newPosition" placeholder="New Position" class="form-control bg-input">
+                            </div>
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input type="date" formControlName="transferDate" placeholder="Transfer Date"
+                                    class="form-control bg-input">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="workAs" placeholder="Work As" class="form-control bg-input">
+                            </div>
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <input formControlName="payScale" placeholder="Pay Scale" class="form-control bg-input">
+                            </div>
+                            <div class="col-6">
+                                <input formControlName="officeName" placeholder="Office Name" class="form-control bg-input">
+                            </div>
+                            <!-- Add more input fields as needed -->
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+
+                        <div class="row p-2">
+                            <div class="col-12">
+                                <button type="button" (click)="closeModalOtpVerify()" class="btn btn-cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>

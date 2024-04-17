@@ -46,6 +46,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<ICaseCategoryService, CaseCategoryService>();
 builder.Services.AddTransient<ICourtsService, CourtsService>();
+builder.Services.AddTransient<IEmployeeManagementService, EmployeeManagementService>();
 builder.Services.AddTransient<Case_Marking_Web_Application.Interfaces.IAuthenticationService, Case_Marking_Web_Application.Service.AuthenticationService>();
 
 // Add DbContext

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\attachements\\30b4eaf8-7d19-41b3-b3ac-c0b179ef6fd4.png",
+      "PackagePath": "staticwebassets\\attachements\\30b4eaf8-7d19-41b3-b3ac-c0b179ef6fd4.png"
+    },
+    {
+      "Id": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\attachements\\9408bc40-ced6-4a65-9db2-dccd12bfc6a4.png",
+      "PackagePath": "staticwebassets\\attachements\\9408bc40-ced6-4a65-9db2-dccd12bfc6a4.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Case Marking Web Application.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Case Marking Web Application.props",
+      "PackagePath": "build\\Case Marking Web Application.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Case Marking Web Application.props",
+      "PackagePath": "buildMultiTargeting\\Case Marking Web Application.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Case Marking Web Application.props",
+      "PackagePath": "buildTransitive\\Case Marking Web Application.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

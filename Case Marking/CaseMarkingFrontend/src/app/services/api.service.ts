@@ -75,6 +75,56 @@ export class ApiService {
     return this.http.get(url);
   }
 
+  addEmployee(data: any): Observable<any> {
+
+    return this.http.post(environment.apiUrl+'employeemanagement/add-employee', data).pipe(
+
+      catchError(this.handleError)
+
+    );
+
+  }
+
+  getEmployeeList(): Observable<any> {
+
+    return this.http.get(environment.apiUrl+'employeemanagement/employee-list').pipe(
+
+      catchError(this.handleError)
+
+    );
+
+  }
+
+  getEmployeeDetail(id:any): Observable<any> {
+
+    return this.http.get(environment.apiUrl+'employeemanagement/employee-detail/'+id).pipe(
+
+      catchError(this.handleError)
+
+    );
+
+  }
+
+  transferEmployee(request:any): Observable<any> {
+
+    return this.http.post(environment.apiUrl+'employeemanagement/transfer-employee/'+request.employeeId, request).pipe(
+
+      catchError(this.handleError)
+
+    );
+
+  }
+
+  getEmployeeTransferHistory(id:any): Observable<any> {
+
+    return this.http.get(environment.apiUrl+'employeemanagement/get-transfer-history/'+id).pipe(
+
+      catchError(this.handleError)
+
+    );
+
+  }
+
   
   private handleError(error: any) {
 

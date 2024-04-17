@@ -193,3 +193,4 @@ D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Applic
 D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Release\net7.0\Case Marking Web Application.pdb
 D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Release\net7.0\Case Marking Web Application.genruntimeconfig.cache
 D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Release\net7.0\ref\Case Marking Web Application.dll
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Release\net7.0\Case Marking Web Application.staticwebassets.runtime.json

@@ -193,3 +193,4 @@ E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web A
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.genruntimeconfig.cache
 E:\Development\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\ref\Case Marking Web Application.dll
 D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\obj\Debug\net7.0\Case Marking Web Application.sourcelink.json
+D:\HK Dev\CaseMarkingWeb\Case Marking\CaseMarkingBackend\Case Marking Web Application\bin\Debug\net7.0\Case Marking Web Application.staticwebassets.runtime.json

@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "DbIlNgNovoROEzhrPDtaJKoUVhMDY52rf6U5yBtVLPA=",
+  "Hash": "coKKVcjypfBJW8W00rTfwbRB7854l+ycKUBFOghzC6M=",
   "Source": "Case Marking Web Application",
   "BasePath": "_content/Case Marking Web Application",
   "Mode": "Default",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Case Marking Web Application\\wwwroot",
+      "Source": "Case Marking Web Application",
+      "ContentRoot": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\",
+      "BasePath": "_content/Case Marking Web Application",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\attachements\\30b4eaf8-7d19-41b3-b3ac-c0b179ef6fd4.png",
+      "SourceId": "Case Marking Web Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\",
+      "BasePath": "_content/Case Marking Web Application",
+      "RelativePath": "attachements/30b4eaf8-7d19-41b3-b3ac-c0b179ef6fd4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\attachements\\30b4eaf8-7d19-41b3-b3ac-c0b179ef6fd4.png"
+    },
+    {
+      "Identity": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\attachements\\9408bc40-ced6-4a65-9db2-dccd12bfc6a4.png",
+      "SourceId": "Case Marking Web Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HK Dev\\CaseMarkingWeb\\Case Marking\\CaseMarkingBackend\\Case Marking Web Application\\wwwroot\\",
+      "BasePath": "_content/Case Marking Web Application",
+      "RelativePath": "attachements/9408bc40-ced6-4a65-9db2-dccd12bfc6a4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\attachements\\9408bc40-ced6-4a65-9db2-dccd12bfc6a4.png"
+    }
+  ]
 }

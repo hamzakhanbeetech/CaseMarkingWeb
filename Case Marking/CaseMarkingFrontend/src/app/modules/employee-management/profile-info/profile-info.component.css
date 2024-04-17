@@ -1,6 +1,6 @@
 
 .img-account-profile {
-    height: 10rem;
+    height: 13rem;
 }
 .rounded-circle {
     border-radius: 50% !important;
@@ -54,3 +54,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.modal{
+    background: rgba(16, 16, 16, 0.3);
+    backdrop-filter: blur(7px);
+  }

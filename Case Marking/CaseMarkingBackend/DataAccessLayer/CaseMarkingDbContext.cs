@@ -19,6 +19,10 @@ public partial class CaseMarkingDbContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    public virtual DbSet<Employee> Employee { get; set; }
+
+    public virtual DbSet<EmploymentHistory> EmploymentHistory { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
